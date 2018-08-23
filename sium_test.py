@@ -62,6 +62,7 @@ for i,row in positive_train.iterrows():
     sium.add_word_to_property(row['color'], {'word':word,'pword':pword})
     sium.add_word_to_property(row['type'], {'word':word,'pword':pword})
     sium.add_word_to_property(row['grid'], {'word':word,'pword':pword})
+    pword = word
 
 sium.train()
 print('persisting and loading model...')
